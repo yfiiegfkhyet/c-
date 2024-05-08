@@ -1,0 +1,69 @@
+Create a class 'Student' with three data members which are name, age and address. The constructor of the class assigns default values to name as "unknown", age as e and address as "not available".
+
+(M) Fun. Overload
+
+It has two functions with the same name 'setInfo".
+
+First function has two parameters for name and age and assigns the same whereas the second function takes has three parameters which are assigned to name, age and address respectively.
+
+Print the name, age and address of 10 students.
+
+Hint Use array of objects
+#include <iostream>
+#include <string>
+
+class Student {
+private:
+    std::string name;
+    int age;
+    std::string address;
+
+public:
+    
+    Student() : name("unknown"), age(0), address("not available") {}
+
+    
+    void setInfo(std::string n, int a) {
+        name = n;
+        age = a;
+    }
+
+    
+    void setInfo(std::string n, int a, std::string addr) {
+        name = n;
+        age = a;
+        address = addr;
+    }
+
+    std::string getName() { return name; }
+    int getAge() { return age; }
+    std::string getAddress() { return address; }
+};
+
+int main() {
+  
+    Student students[10];
+
+  
+    students[0].setInfo("John Doe", 20);
+    students[1].setInfo("Jane Smith", 22, "123 Main St, Anytown USA");
+    students[2].setInfo("Bob Johnson", 19);
+    students[3].setInfo("Alice Williams", 21, "456 Oak Rd, Somewhere City");
+    students[4].setInfo("Tom Davis", 18);
+    students[5].setInfo("Sarah Lee", 23, "789 Elm St, Anywhere Town");
+    students[6].setInfo("Mike Brown", 20);
+    students[7].setInfo("Emily Wilson", 19, "321 Pine Ave, Somewhere Else");
+    students[8].setInfo("David Anderson", 22);
+    students[9].setInfo("Olivia Thompson", 21, "654 Oak St, Anyplace");
+
+  
+    for (int i = 0; i < 10; i++) {
+        std::cout << "Student " << i + 1 << ":" << std::endl;
+        std::cout << "Name: " << students[i].getName() << std::endl;
+        std::cout << "Age: " << students[i].getAge() << std::endl;
+        std::cout << "Address: " << students[i].getAddress() << std::endl;
+        std::cout << std::endl;
+    }
+
+    return 0;
+}
