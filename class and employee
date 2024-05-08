@@ -1,0 +1,190 @@
+Define a class Employee with Emp name, Emp id, Address, Mail id, Mobile no as members. Inherit the classes, Programmer, Assistant Professor, Associate Professor and Professor from employee class. Add Basic Pay (BP) as the member of all the inherited classes and set 97% of BP as DA, 10% of BP as HRA, 12% of BP as PF, 8.1% of BP for staff club fund. Generate pay slips for the employees with their gross and net salary.
+
+(M) Fun. Overload
+
+Input:
+
+Enter Name of the Employee: Suresh Enter Address of the Employee Vetri Nagar
+
+Enter ID of the Employee : 7001
+
+Enter Mobile Number: 9898989898
+
+Enter E-Mail ID of the Employee aff@gmail.com
+
+ENTER THE BASIC PAY OF THE PROGRAMMER > 880ce
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+class Employee {
+protected:
+    std::string name;
+    int id;
+    std::string address;
+    std::string email;
+    std::string mobile;
+
+public:
+    Employee(std::string n, int i, std::string a, std::string e, std::string m) {
+        name = n;
+        id = i;
+        address = a;
+        email = e;
+        mobile = m;
+    }
+
+    virtual void displayPaySlip() {
+        std::cout << "Employee Name: " << name << std::endl;
+        std::cout << "Employee ID: " << id << std::endl;
+        std::cout << "Address: " << address << std::endl;
+        std::cout << "Email: " << email << std::endl;
+        std::cout << "Mobile: " << mobile << std::endl;
+    }
+};
+
+class Programmer : public Employee {
+protected:
+    double basicPay;
+
+public:
+    Programmer(std::string n, int i, std::string a, std::string e, std::string m, double bp) : Employee(n, i, a, e, m) {
+        basicPay = bp;
+    }
+
+    void displayPaySlip() override {
+        Employee::displayPaySlip();
+        double da = 0.97 * basicPay;
+        double hra = 0.1 * basicPay;
+        double pf = 0.12 * basicPay;
+        double staffClubFund = 0.081 * basicPay;
+        double grossSalary = basicPay + da + hra;
+        double netSalary = grossSalary - pf - staffClubFund;
+
+        std::cout << std::fixed << std::setprecision(2);
+        std::cout << "Basic Pay: " << basicPay << std::endl;
+        std::cout << "Dearness Allowance (DA): " << da << std::endl;
+        std::cout << "House Rent Allowance (HRA): " << hra << std::endl;
+        std::cout << "Provident Fund (PF): " << pf << std::endl;
+        std::cout << "Staff Club Fund: " << staffClubFund << std::endl;
+        std::cout << "Gross Salary: " << grossSalary << std::endl;
+        std::cout << "Net Salary: " << netSalary << std::endl;
+    }
+};
+
+class AssistantProfessor : public Employee {
+protected:
+    double basicPay;
+
+public:
+    AssistantProfessor(std::string n, int i, std::string a, std::string e, std::string m, double bp) : Employee(n, i, a, e, m) {
+        basicPay = bp;
+    }
+
+    void displayPaySlip() override {
+        Employee::displayPaySlip();
+        double da = 0.97 * basicPay;
+        double hra = 0.1 * basicPay;
+        double pf = 0.12 * basicPay;
+        double staffClubFund = 0.081 * basicPay;
+        double grossSalary = basicPay + da + hra;
+        double netSalary = grossSalary - pf - staffClubFund;
+
+        std::cout << std::fixed << std::setprecision(2);
+        std::cout << "Basic Pay: " << basicPay << std::endl;
+        std::cout << "Dearness Allowance (DA): " << da << std::endl;
+        std::cout << "House Rent Allowance (HRA): " << hra << std::endl;
+        std::cout << "Provident Fund (PF): " << pf << std::endl;
+        std::cout << "Staff Club Fund: " << staffClubFund << std::endl;
+        std::cout << "Gross Salary: " << grossSalary << std::endl;
+        std::cout << "Net Salary: " << netSalary << std::endl;
+    }
+};
+
+class AssociateProfessor : public Employee {
+protected:
+    double basicPay;
+
+public:
+    AssociateProfessor(std::string n, int i, std::string a, std::string e, std::string m, double bp) : Employee(n, i, a, e, m) {
+        basicPay = bp;
+    }
+
+    void displayPaySlip() override {
+        Employee::displayPaySlip();
+        double da = 0.97 * basicPay;
+        double hra = 0.1 * basicPay;
+        double pf = 0.12 * basicPay;
+        double staffClubFund = 0.081 * basicPay;
+        double grossSalary = basicPay + da + hra;
+        double netSalary = grossSalary - pf - staffClubFund;
+
+        std::cout << std::fixed << std::setprecision(2);
+        std::cout << "Basic Pay: " << basicPay << std::endl;
+        std::cout << "Dearness Allowance (DA): " << da << std::endl;
+        std::cout << "House Rent Allowance (HRA): " << hra << std::endl;
+        std::cout << "Provident Fund (PF): " << pf << std::endl;
+        std::cout << "Staff Club Fund: " << staffClubFund << std::endl;
+        std::cout << "Gross Salary: " << grossSalary << std::endl;
+        std::cout << "Net Salary: " << netSalary << std::endl;
+    }
+};
+
+class Professor : public Employee {
+protected:
+    double basicPay;
+
+public:
+    Professor(std::string n, int i, std::string a, std::string e, std::string m, double bp) : Employee(n, i, a, e, m) {
+        basicPay = bp;
+    }
+
+    void displayPaySlip() override {
+        Employee::displayPaySlip();
+        double da = 0.97 * basicPay;
+        double hra = 0.1 * basicPay;
+        double pf = 0.12 * basicPay;
+        double staffClubFund = 0.081 * basicPay;
+        double grossSalary = basicPay + da + hra;
+        double netSalary = grossSalary - pf - staffClubFund;
+
+        std::cout << std::fixed << std::setprecision(2);
+        std::cout << "Basic Pay: " << basicPay << std::endl;
+        std::cout << "Dearness Allowance (DA): " << da << std::endl;
+        std::cout << "House Rent Allowance (HRA): " << hra << std::endl;
+        std::cout << "Provident Fund (PF): " << pf << std::endl;
+        std::cout << "Staff Club Fund: " << staffClubFund << std::endl;
+        std::cout << "Gross Salary: " << grossSalary << std::endl;
+        std::cout << "Net Salary: " << netSalary << std::endl;
+    }
+};
+
+int main() {
+    std::string name, address, email, mobile;
+    int id;
+    double basicPay;
+
+    std::cout << "Enter Name of the Employee: ";
+    std::getline(std::cin, name);
+
+    std::cout << "Enter Address of the Employee: ";
+    std::getline(std::cin, address);
+
+    std::cout << "Enter ID of the Employee: ";
+    std::cin >> id;
+    std::cin.ignore(); // Ignore the newline character
+
+    std::cout << "Enter Mobile Number: ";
+    std::getline(std::cin, mobile);
+
+    std::cout << "Enter E-Mail ID of the Employee: ";
+    std::getline(std::cin, email);
+
+    std::cout << "ENTER THE BASIC PAY OF THE PROGRAMMER: ";
+    std::cin >> basicPay;
+
+    Programmer programmer(name, id, address, email, mobile, basicPay);
+    programmer.displayPaySlip();
+
+    return 0;
+}
