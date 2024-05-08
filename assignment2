@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+class MyClass {
+public:
+    
+    void print(int num) {
+        std::cout << "Printing integer: " << num << std::endl;
+    }
+
+    void print(const std::string& str) {
+        std::cout << "Printing string: " << str << std::endl;
+    }
+};
+
+int main() {
+    MyClass obj;
+
+    
+  
+    obj.print("Hello, world!");
+
+    return 0;
+}
