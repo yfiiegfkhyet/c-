@@ -1,0 +1,354 @@
+
+Search
+
+
+
+
+Vidyarthi
+11:50 am
+Create a class 'Student' with three data members which are name, age and address. The constructor of the class assigns default values to name as "unknown", age as e and address as "not available". (M) Fun. Overload It has two functions with the same name 'setInfo". First function has two parameters for name and age and assigns the same whereas the second function takes has three parameters which are assigned to name, age and address respectively. Print the name, age and address of 10 students. Hint Use array of objects #include <iostream> #include <string> class Student { private:     std::string name;     int age;     std::string address; public:          Student() : name("unknown"), age(0), address("not available") {}          void setInfo(std::string n, int a) {         name = n;         age = a;     }          void setInfo(std::string n, int a, std::string addr) {         name = n;         age = a;         address = addr;     }     std::string getName() { return name; }     int getAge() { return age; }     std::string getAddress() { return address; } }; int main() {        Student students[10];        students[0].setInfo("John Doe", 20);     students[1].setInfo("Jane Smith", 22, "123 Main St, Anytown USA");     students[2].setInfo("Bob Johnson", 19);     students[3].setInfo("Alice Williams", 21, "456 Oak Rd, Somewhere City");     students[4].setInfo("Tom Davis", 18);     students[5].setInfo("Sarah Lee", 23, "789 Elm St, Anywhere Town");     students[6].setInfo("Mike Brown", 20);     students[7].setInfo("Emily Wilson", 19, "321 Pine Ave, Somewhere Else");     students[8].setInfo("David Anderson", 22);     students[9].setInfo("Olivia Thompson", 21, "654 Oak St, Anyplace");        for (int i = 0; i < 10; i++) {         std::cout << "Student " << i + 1 << ":" << std::endl;         std::cout << "Name: " << students[i].getName() << std::endl;         std::cout << "Age: " << students[i].getAge() << std::endl;         std::cout << "Address: " << students[i].getAddress() << std::endl;         std::cout << std::endl;
+
+Khaleel
+Saturday
+Photo
+
+Airtel India
+Sunday
+75 GB data | No daily data limit Get everything you want with Airtel Postpaid ❤️   Upgrade in just a single step and enjoy:    🍿 Amazon Prime  🎬 Disney+ Hotstar  📲 Carry forward up to 200 GB of unused data   All of this at just ₹499
+5
+Homemates❤️
+Sunday
+Chetan Room
+: 
+https://t.me/iamprasadtech/36173
+1
++91 78932 86420
+Monday
+ok
+2
+
+5 Times Namaz prayer TV R
+Monday
+~ MOHAMED
+: 
+https://youtu.be/ThMxVCVXj1I?si=5IcM71HfUUL8XeHz Shaykh al Islam Ibn taymiyyah (rah) explains the aqeedadh of Ahlu sunnah with this single poem  Qaasidha Laamiyyah
+104
+Hari Krishna Clss
+Yesterday
+Haa
+
+Team Rajyas
+Yesterday
++91 93453 76739 joined via an invite link
+287
+C++
+8:41 am
+~ Akki😈
+: 
+Photo
+14
+DSA0138
+9:43 am
+~ Pavan Kalyan
+: 
+Photo
+20
+
+Praveen sir mentees
+10:18 am
+Mentor Sir
+: 
+Make use of this time..
+7
+
+Ankurekula Praveen
+30/4/2024
+Video
++91 70958 40459
+1/5/2024
+Sare evening chedam lee
+1
+
+Karthik Room
+1/5/2024
+Photo
+
+Mentor Sir
+Thursday
+Ok sir
+SSE Noiyyal hostel
+Thursday
+Hostel
+: 
+02-05-2024 To, SSE, students in Noyyal boys hostel, Dear inmates, As per Dean's order,all the hostellers are hereby informed that everyone should be present in the hostel at the time of taking attendance between 8pm and 9pm failing which necessary action will be taken. Hostel warden. SSE, Noyyal.
+8
+
+Chetan Room
+Friday
+Photo
+Mummy💋🫀💗
+Friday
++91 81796 96825
+
+Dad🌏🫀
+Saturday
+9160293939
+Your personal messages are end-to-end encrypted
+Get WhatsApp for Windows
+
+Vidyarthi
+
+
+Click here to get older messages from your phone.
+15/4/2024
+Forwarded
+pf 1.pptx
+1 page•PPTX•275 kB
+12:12 pm
+4545.pptx
+1 page•PPTX•2 MB
+12:17 pm
+pf_1[1].pptx
+1 page•PPTX•274 kB
+12:30 pm
+https://www.google.com/url?q=https://www.google.com/url?q%3Dhttp://paperpile.com/b/JFMrxr/suNl%26amp;sa%3DD%26amp;source%3Deditors%26amp;ust%3D1713184128053124%26amp;usg%3DAOvVaw0vu-g2htdKCnPHjzR0fuE7&sa=D&source=docs&ust=1713184128076751&usg=AOvVaw1zQx8QrHDOdH5sJNeg1bHx
+5:00 pm
+https://docs.google.com/document/d/1IcxyUqoQZ9eLF-FpDZEfCX0ns_Y0nCaHcOmRtaohx3Q/edit
+5:01 pm
+16/4/2024
+furkhan poster 2[1].pptx
+1 page•PPTX•274 kB
+11:28 am
+furkhan poster 1[1].pptx
+1 page•PPTX•340 kB
+11:28 am
+22/4/2024
+
+12:35 pm
+Do it man fast
+12:35 pm
+Re
+2:16 pm
+Nenu repu clg ke ranu
+2:19 pm
+Yee
+2:43 pm
+You
+Photo
+Calculate chai ra
+2:43 pm
+Re
+9:25 pm
+Lanja
+9:25 pm
+30/4/2024
+
+10:58 am
+
+10:58 am
+
+10:58 am
+
++3
+TODAY
+blocks
+#include <iostream>
+#include <string>
+
+int main() {
+    try {
+        
+        int num;
+        std::cout << "Enter an integer: ";
+        std::cin >> num;
+
+        if (std::cin.fail()) {
+            throw "Invalid input. Please enter an integer.";
+        }
+
+        
+        std::string str;
+        std::cout << "Enter a string: ";
+        std::cin >> str;
+
+        if (str.empty()) {
+            throw std::string("String cannot be empty.");
+        }
+
+    } catch (const char* msg) {
+        std::cerr << "Error: " << msg << std::endl;
+    } catch (const std::string& msg) {
+        std::cerr << "Error: " << msg << std::endl;
+    } catch (...) {
+        std::cerr << "An unknown error occurred." << std::endl;
+    }
+11:47 am
+#include <iostream>
+#include <string>
+
+class MyClass {
+public:
+    
+    void print(int num) {
+        std::cout << "Printing integer: " << num << std::endl;
+    }
+
+    void print(const std::string& str) {
+        std::cout << "Printing string: " << str << std::endl;
+    }
+};
+
+int main() {
+    MyClass obj;
+
+    
+  
+    obj.print("Hello, world!");
+
+    return 0;
+}
+11:49 am
+Define a class Employee with Emp name, Emp id, Address, Mail id, Mobile no as members. Inherit the classes, Programmer, Assistant Professor, Associate Professor and Professor from employee class. Add Basic Pay (BP) as the member of all the inherited classes and set 97% of BP as DA, 10% of BP as HRA, 12% of BP as PF, 8.1% of BP for staff club fund. Generate pay slips for the employees with their gross and net salary.
+
+(M) Fun. Overload
+
+Input:
+
+Enter Name of the Employee: Suresh Enter Address of the Employee Vetri Nagar
+
+Enter ID of the Employee : 7001
+
+Enter Mobile Number: 9898989898
+
+Enter E-Mail ID of the Employee aff@gmail.com
+
+ENTER THE BASIC PAY OF THE PROGRAMMER > 880ce
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+class Employee {
+protected:
+    std::string name;
+    int id;
+    std::string address;
+    std::string email;
+    std::string mobile;
+
+public:
+    Employee(std::string n, int i, std::string a, std::string e, std::string m) {
+        name = n;
+        id = i;
+        address = a;
+        email = e;
+        mobile = m;
+    }
+
+    virtual void displayPaySlip() {
+        std::cout << "Employee Name: " << name << std::endl;
+        std::cout << "Employee ID: " << id << std::endl;
+        std::cout << "Address: " << address << std::endl;
+        std::cout << "Email: " << email << std::endl;
+        std::cout << "Mobile: " << mobile << std::endl;
+    }
+};
+
+class Programmer : public Employee {
+protected:
+    double basicPay;
+
+public:
+    Programmer(std::string n, int i, std::string a, std::string e, std::string m, double bp) : Employee(n, i, a, e, m) {
+        basicPay = bp;
+    }
+
+    void displayPaySlip() override {
+        Employee::displayPaySlip();
+        double da = 0.97 * basicPay;
+        double hra = 0.1 * basicPay;
+        double pf = 0.12 * basicPay;
+        double staffClubFund = 0.081 * basicPay;
+        double grossSalary = basicPay + da + hra;
+        double netSalary = grossSalary - pf - staffClubFund;
+
+        std::cout << std::fixed << std::setprecision(2);
+        std::cout << "Basic Pay: " << basicPay << std::endl;
+        std::cout << "Dearness Allowance (DA): " << da << std::endl;
+        std::cout << "House Rent Allowance (HRA): " << hra << std::endl;
+        std::cout << "Provident Fund (PF): " << pf << std::endl;
+        std::cout << "Staff Club Fund: " << staffClubFund << std::endl;
+        std::cout << "Gross Salary: " << grossSalary << std::endl;
+        std::cout << "Net Salary: " << netSalary << std::endl;
+    }
+};
+
+class AssistantProfessor : public Employee {
+protected:
+    double basicPay;
+
+public:
+    AssistantProfessor(std::string n, int i, std::string a, std::string e, std::string m, double bp) : Employee(n, i, a, e, m) {
+        basicPay = bp;
+    }
+
+    void displayPaySlip() override {
+        Employee::displayPaySlip();
+        double da = 0.97 * basicPay;
+        double hra = 0.1 * basicPay;
+        double pf = 0.12 * basicPay;
+        double staffClubFund = 0.081 * basicPay;
+        double grossSalary = basicPay + da + hra;
+        double netSalary = grossSalary - pf - staffClubFund;
+
+        std::cout << std::fixed << std::setprecision(2);
+        std::cout << "Basic Pay: " << basicPay << std::endl;
+        std::cout << "Dearness Allowance (DA): " << da << std::endl;
+        std::cout << "House Rent Allowance (HRA): " << hra << std::endl;
+        std::cout << "Provident Fund (PF): " << pf << std::endl;
+        std::cout << "Staff Club Fund: " << staffClubFund << std::endl;
+        std::cout << "Gross Salary: " << grossSalary << std::endl;
+        std::cout << "Net Salary: " << netSalary << std::endl;
+    }
+};
+
+class AssociateProfessor : public Employee {
+protected:
+    double basicPay;
+
+public:
+    AssociateProfessor(std::string n, int i, std::string a, std::string e, std::string m, double bp) : Employee(n, …Read more
+11:50 am
+Create a class 'Student' with three data members which are name, age and address. The constructor of the class assigns default values to name as "unknown", age as e and address as "not available".
+
+(M) Fun. Overload
+
+It has two functions with the same name 'setInfo".
+
+First function has two parameters for name and age and assigns the same whereas the second function takes has three parameters which are assigned to name, age and address respectively.
+
+Print the name, age and address of 10 students.
+
+Hint Use array of objects
+#include <iostream>
+#include <string>
+
+class Student {
+private:
+    std::string name;
+    int age;
+    std::string address;
+
+public:
+    
+    Student() : name("unknown"), age(0), address("not available") {}
+
+    
+    void setInfo(std::str…Read more
+11:50 am
+
+
+
+
+
+
+
